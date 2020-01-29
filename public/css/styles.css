@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Nunito:300,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+body {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    min-height: 500px;
+    height: 100vh;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    width: 100%;
+}
+
+header h1 {
+    color: #1B325F;
+    font-size: 3rem;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    border-top: 1px solid #1B325F;
+    padding-top: 2rem;
+    font-family: Nunito;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navigation a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color:white;
+    font-size: 1.25rem;
+    font-family: Nunito;
+    font-weight: 300;
+    background-color: #9CC4E4;
+    padding: .2rem .6rem;
+    border-radius: 5px;
+}
+.navigation { 
+    margin: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid #1B325F;
+    padding-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    color: #1B325F;
+    margin-bottom: 1rem;
+
+}
+
+button {
+        margin-right: 2rem;
+    text-decoration: none;
+    color:white;
+    font-size: 1.25rem;
+    font-family: Nunito;
+    font-weight: 300;
+    background-color: #9CC4E4;
+    padding: .2rem .6rem;
+    border-radius: 5px;
+}
+
+input {
+    height: 2.2rem;
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
