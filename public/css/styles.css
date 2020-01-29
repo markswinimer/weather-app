@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Nunito:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:300,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    color: #202020;
 }
 
 
@@ -11,13 +13,16 @@ img {
     object-fit: cover;
 }
 
+html {
+    background-color: #2DA89C;
+}
 body {
-    background-color: white;
+    background-color:white;
     max-width: 700px;
-    margin: auto;
-    min-height: 500px;
-    height: 100vh;
-    font-family: 'Didact Gothic', sans-serif;
+    margin: 2rem auto;
+    border-radius: 10px;
+    min-height: 300px;
+    font-family: 'Brawler', sans-serif;
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -28,72 +33,96 @@ body {
 }
 
 header h1 {
-    color: #1B325F;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: Raleway;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
-
+.toolTip {
+    padding: 1rem 1rem;
+    margin: 1rem 0 1.5rem 0;
+    color: #303030;
+    font-family: Roboto;
+    font-size: 1.1rem;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    width: auto;
+}
+.navigation a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color:#FF4242;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    font-weight: 300;
+    border: 1px solid white;
+    border-bottom: 1px solid #FF4242;
+    padding: .2rem .6rem;
+    border-radius: 2px;
+}
+.navigation a:hover {
+    border-bottom: 2px solid #FF4242;
+    padding-bottom: .25rem;
+}
+.navigation { 
+    margin: 1rem 0;
+    width: 100%;
+}
 footer {
     display: flex;
     margin-top: auto;
-    border-top: 1px solid #1B325F;
     padding-top: 2rem;
-    font-family: Nunito;
+    font-size: .7rem;
+}
+
+footer h3 {
+    font-family: Roboto;
+    color: #808080;
     font-weight: 300;
-    font-size: 1rem;
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
-.navigation a {
-    margin-right: 2rem;
-    text-decoration: none;
-    color:white;
-    font-size: 1.25rem;
-    font-family: Nunito;
-    font-weight: 300;
-    background-color: #9CC4E4;
-    padding: .2rem .6rem;
-    border-radius: 5px;
-}
-.navigation { 
-    margin: 1rem 0;
-    width: 100%;
-    border-bottom: 1px solid #1B325F;
-    padding-bottom: 2rem;
-}
 
 .page-title {
     font-size: 2rem;
-    color: #1B325F;
     margin-bottom: 1rem;
-
+    font-family: Brawler;
 }
 
 button {
-        margin-right: 2rem;
     text-decoration: none;
+    border: none;
     color:white;
     font-size: 1.25rem;
-    font-family: Nunito;
+    font-family: Roboto;
     font-weight: 300;
-    background-color: #9CC4E4;
-    padding: .2rem .6rem;
+    background-color: #FF4242;
+    padding: .2rem 1rem;
     border-radius: 5px;
+    height: 2.5rem;
+    margin-left: 1rem;
 }
 
 input {
-    height: 2.2rem;
+    height: 2.5rem;
     font-size: 1rem;
+    padding-left: 10px;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
 }
 
 p {
     margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: Roboto;
 }
 
 form {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
