@@ -4,6 +4,7 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+const messageThree = document.querySelector('#message-3')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -16,8 +17,9 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
               return messageOne.textContent = data.error
             }
-            messageOne.textContent = data.address
-            messageTwo.textContent = data.weather
+            messageOne.textContent = "Location: " + data.address
+            messageTwo.textContent = data.weather.forecast
+            messageThree.textContent = "Hourly: " + data.weather.hourly
         })
     })
 })

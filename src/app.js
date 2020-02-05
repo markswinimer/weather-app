@@ -72,7 +72,8 @@ app.get('/weather', (req, res) => {
                 weather: forecastData
             })
             console.log('Location: ' + location)
-            console.log('Forecast: ' + forecastData)
+            console.log('Forecast: ' + forecastData.forecast)
+            console.log('Hourly: ' + forecastData.hourly)
         })
     })
 
